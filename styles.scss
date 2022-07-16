@@ -1,2 +1,16 @@
 @use "./Sass_variables/reseter";
 @use "./Sass_variables/variables";
+body {
+    font-size: 1.8rem;
+}
+
+.form {
+    &__error {
+        #error_msg {
+            color: variables.$error_color;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+    }
+}
