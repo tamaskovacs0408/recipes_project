@@ -85,13 +85,13 @@
         width: 100%;
         padding: 20px;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         #meal_name {
             font-family: variables.$recipe-name-font-family;
             font-size: 3rem;
         }
         .recipe {
-            width: 30%;
+            width: 40%;
             padding: 10px;
             margin: 10px 20px;
             display: flex;
