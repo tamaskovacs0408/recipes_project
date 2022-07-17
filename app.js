@@ -19,7 +19,7 @@ function recipesRendering(response) {
                 <h2 id="meal_name">${meal.strMeal}</h2>
                 <img class="recipe__img" src="${meal.strMealThumb}" alt="${meal.strMeal}"/>
                 <p id="insctructions">${meal.strInstructions}</p>
-                <p id="recipe-source"><a href="${meal.strSource}">Source</a></p>
+                <p id="recipe_source"><a target="_blank" href="${meal.strSource}">Source</a></p>
             </div>`
             }
         
