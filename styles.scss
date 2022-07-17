@@ -1,7 +1,23 @@
-@use "./Sass_variables/reseter";
-@use "./Sass_variables/variables";
+@use "./Sass_components/reseter";
+@use "./Sass_components/variables";
+@use "./Sass_components/responsive";
+
 body {
     font-size: 1.8rem;
+    font-family: variables.$main-font-family;
+    color: black;
+    background: variables.$background-color;
+}
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    h1 {
+        display: inline-block;
+        font-family: variables.$header-font-family;
+        text-align: center;
+
+    }
 }
 
 .form {
@@ -20,3 +36,8 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+
+
+
+
