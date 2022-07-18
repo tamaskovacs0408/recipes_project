@@ -95,11 +95,20 @@ header {
         }
 }
 .section__recipes {
+    #no_result {
+        margin: 20px auto;
+        color: variables.$error_color;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 10px;
     .recipe {
         width: 80%;
         display: flex;
@@ -120,9 +129,9 @@ header {
         #instructions {
             text-align: justify
         }
-        &__source {
+        #recipe__source {
             font-size: 2rem;
-            color: ;
+            text-decoration: none;
             a {
                 text-decoration: none;
                 color: variables.$recipe_link_color;
@@ -133,7 +142,9 @@ header {
             a:hover {
                 color: variables.$recipe_link_hover;
             }
-            
+            a:visited {
+                color: variables.$recipe_link_visited;
+            }
         }
     }
 }
