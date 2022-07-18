@@ -71,6 +71,9 @@
                 }
             }
             .section__recipes {
+                #no_result {
+                    font-size: 5rem;
+                }
                 display: flex;
                 width: 100%;
                 padding: 20px;
@@ -97,30 +100,10 @@
                         margin: 10px;
                         text-align: justify;
                     }
-                    #recipe_source {
+                    #recipe__source {
                         font-size: 2rem;
-                        a {
-                            text-decoration: none;
-                            color: rgb(110, 108, 108);
-                            text-shadow: 1px 1px 1px black;
-                            font-style: italic;
-                            transition: color 0.6s;
-                        }
-                        a:hover {
-                            color: #e4c4af;
-                        }
-                        a:visited {
-                            color: #889033;
-                        }
                     }
                 }
-            }
-            #no_result {
-                margin: 20px auto;
-                color: variables.$error_color;
-                font-size: 5rem;
-                font-weight: 700;
-                letter-spacing: 1px;
             }
         }
 }

@@ -248,3 +248,41 @@ footer p a:hover {
 footer p a:visited {
   color: rgb(97, 88, 88);
 }
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  .form_container {
+    height: 250px;
+  }
+  .form_container .form {
+    margin: 15px;
+  }
+  .form_container .form__label {
+    margin: 20px 0;
+    font-size: 4rem;
+  }
+  .form_container .form__label__input {
+    width: 250px;
+    height: 30px;
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+  .section__recipes .recipe {
+    width: 75%;
+  }
+  .section__recipes .recipe #meal_name {
+    font-size: 3rem;
+  }
+  .section__recipes .recipe__img {
+    width: 50%;
+  }
+  .section__recipes .recipe #instructions {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .section__recipes .recipe #recipe__source {
+    font-size: 2.5rem;
+  }
+}
