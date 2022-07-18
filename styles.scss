@@ -3,6 +3,7 @@
 @use "./Sass_components/footer" as footer;
 @use "./Sass_components/responsive_768" as medium_size;
 @use "./Sass_components/responsive_992" as large_size;
+@use "./Sass_components/responsive_1200" as xl_size;
 
 body {
     position: relative;
@@ -110,7 +111,6 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 10px;
     .recipe {
         width: 80%;
         display: flex;
@@ -121,6 +121,7 @@ header {
             font-size: 2.5rem;
             text-align: center;
             margin: 1rem;
+            font-family: variables.$recipe-name-font-family;
         }
         &__img {
             width: 70%;
@@ -162,4 +163,8 @@ footer {
 
 @media screen and (min-width: variables.$size_l){
     @include large_size.size_l;
+}
+
+@media screen and (min-width: variables.$size_xl){
+    @include xl_size.size_xl;
 }

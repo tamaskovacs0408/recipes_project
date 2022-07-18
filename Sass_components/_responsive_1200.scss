@@ -1,109 +1,56 @@
-@mixin screen_size_xl {
-        header {
-            height: 150px;
-            align-items: center;
-            h1 {
-                font-size: 5rem;
+@mixin size_xl {
+    header {
+        height: 150px;
+        align-items: center;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    .form_container {
+        height: 400px;
+        .form {
+            margin: 20px;
+            &__label {
+                margin: 30px 0;
+                font-size: 4.5rem;
+                &__input {
+                    width: 300px;
+                    height: 50px;
+                    font-size: 2rem;
+                    padding: 10px;
+                }
             }
         }
-        main {
-            .form_container {
-                height: 400px;
-                .form {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: stretch;
-                    margin: 20px;
-                    &__label {
-                        margin: 30px 0;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 4.5rem;
-                        text-shadow: 3px 3px 3px rgb(73, 73, 73);
-                        font-style: italic;
-                        font-family: variables.$recipe-name-font-family;
-                        color: variables.$background-color;
-                        &__input {
-                            width: 300px;
-                            height: 50px;
-                            font-size: 2rem;
-                            margin: 20px 0;
-                            padding: 10px;
-                            border: 2px solid black;
-                            border-radius: 10px;
-                        }
-                    }
-                    button {
-                        width: 100px;
-                        height: 30px;
-                        display: block;
-                        margin: 0 auto;
-                        font-size: 1.5rem;
-                        font-weight: 600;
-                        border: none;
-                        border-radius: 5px;
-                        background: variables.$background-color;
-                        transition: background-color  0.4s ;
-                        cursor: pointer;
-                        &:hover {
-                            background: #e7eaca;
-                        }
-                        &:active {
-                            background-color: #575b5b;
-                            color: whitesmoke;
-                            box-shadow: 0 5px rgb(95, 95, 95);
-                            transform: translateY(2px);
-                        }
-                    }
-                    &__error {
-                        margin: 30px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        #error_msg {
-                            color: white;
-                            text-shadow: 2px 2px 2px variables.$error_color;
-                        }
-                    }
-                }
+    }
+    .section__recipes {
+        #no_result {
+            font-size: 5rem;
+        }
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        .recipe {
+            width: 40%;
+            padding: 10px;
+            margin: 10px 20px;
+            justify-content: center;
+            border-bottom: none;
+            #meal_name {
+                font-size: 3.5rem;
+            &__img {
+                width: 60%;
+                margin: 10px;
             }
-            .section__recipes {
-                #no_result {
-                    font-size: 5rem;
-                }
-                display: flex;
-                width: 100%;
-                padding: 20px;
-                flex-wrap: wrap;
-                justify-content: center;
-                #meal_name {
-                    font-family: variables.$recipe-name-font-family;
-                    font-size: 3rem;
-                }
-                .recipe {
-                    width: 40%;
-                    padding: 10px;
-                    margin: 10px 20px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    &__img {
-                        width: 80%;
-                        margin: 10px;
-                        border-radius: 50%;
-                        border: 5px solid white;
-                    }
-                    #insctructions {
-                        margin: 10px;
-                        text-align: justify;
-                    }
-                    #recipe__source {
-                        font-size: 2rem;
-                    }
-                }
+            #insctructions {
+                margin: 10px;
+                text-align: justify;
             }
+            #recipe__source {
+                font-size: 2.8rem;
+            }
+        }
+    }
         }
 }
