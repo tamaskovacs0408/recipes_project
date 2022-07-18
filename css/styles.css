@@ -360,3 +360,12 @@ footer p a:visited {
     font-size: 2.8rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .section__recipes {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section__recipes .recipe {
+    width: 30%;
+  }
+}

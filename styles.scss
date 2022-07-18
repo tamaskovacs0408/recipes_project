@@ -4,6 +4,7 @@
 @use "./Sass_components/responsive_768" as medium_size;
 @use "./Sass_components/responsive_992" as large_size;
 @use "./Sass_components/responsive_1200" as xl_size;
+@use "./Sass_components/responsive_1400" as xxl_size;
 
 body {
     position: relative;
@@ -167,4 +168,8 @@ footer {
 
 @media screen and (min-width: variables.$size_xl){
     @include xl_size.size_xl;
+}
+
+@media screen and (min-width: variables.$size_xxl) {
+    @include xxl_size.size_xxl;
 }
