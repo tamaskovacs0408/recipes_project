@@ -195,7 +195,7 @@ header h1 {
   border: 5px solid white;
   margin: 1rem;
 }
-.section__recipes .recipe #instructions {
+.section__recipes .recipe__instructions {
   text-align: justify;
 }
 .section__recipes .recipe #recipe__source {
@@ -278,9 +278,10 @@ footer p a:visited {
   .section__recipes .recipe__img {
     width: 50%;
   }
-  .section__recipes .recipe #instructions {
+  .section__recipes .recipe__instructions {
     font-size: 2.2rem;
     margin-bottom: 10px;
+    line-height: normal;
   }
   .section__recipes .recipe #recipe__source {
     font-size: 2.5rem;
@@ -331,7 +332,6 @@ footer p a:visited {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width: 100%;
-    height: auto;
   }
   .section__recipes #no_result {
     font-size: 5rem;
@@ -340,9 +340,9 @@ footer p a:visited {
     width: 40%;
     padding: 10px;
     margin: 10px 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: none;
   }
   .section__recipes .recipe #meal_name {
@@ -352,9 +352,10 @@ footer p a:visited {
     width: 60%;
     margin: 10px;
   }
-  .section__recipes .recipe #meal_name #insctructions {
+  .section__recipes .recipe #meal_name__instructions {
     margin: 10px;
-    text-align: justify;
+    text-align: left;
+    line-height: 1rem;
   }
   .section__recipes .recipe #meal_name #recipe__source {
     font-size: 2.8rem;

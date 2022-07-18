@@ -18,7 +18,7 @@ function recipesRendering(response) {
             <div class="recipe">
                 <h2 id="meal_name">${meal.strMeal}</h2>
                 <img class="recipe__img" src="${meal.strMealThumb}" alt="${meal.strMeal}"/>
-                <p id="instructions">${meal.strInstructions}</p>
+                <p class="recipe__instructions">${meal.strInstructions}</p>
                 <p id="recipe__source"><a target="_blank" href="${meal.strSource}">Source</a></p>
             </div>`
             }

@@ -29,9 +29,10 @@
             &__img {
                 width: 50%;
             }
-            #instructions {
+            &__instructions {
                 font-size: 2.2rem;
                 margin-bottom: 10px;
+                line-height: normal;
             }
             #recipe__source {
                 font-size: 2.5rem;
