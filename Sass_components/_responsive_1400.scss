@@ -3,6 +3,9 @@
             justify-content: space-around;
             .recipe {
                 width: 30%;
+                &__img {
+                    width: 65%;
+                }
             }
         }
 }

@@ -171,6 +171,7 @@ header h1 {
 }
 .section__recipes .recipe {
   width: 80%;
+  max-height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,12 +185,14 @@ header h1 {
   border-bottom: 1px solid black;
 }
 .section__recipes .recipe #meal_name {
+  display: block;
   font-size: 2.5rem;
   text-align: center;
   margin: 1rem;
   font-family: "Lato", sans-serif;
 }
 .section__recipes .recipe__img {
+  display: block;
   width: 70%;
   border-radius: 50%;
   border: 5px solid white;
@@ -340,6 +343,13 @@ footer p a:visited {
     width: 40%;
     padding: 10px;
     margin: 10px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -368,5 +378,8 @@ footer p a:visited {
   }
   .section__recipes .recipe {
     width: 30%;
+  }
+  .section__recipes .recipe__img {
+    width: 65%;
   }
 }
