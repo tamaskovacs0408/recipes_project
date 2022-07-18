@@ -1,131 +1,126 @@
-@use './variables';
-
-
-
-@media screen and (min-width: 1200px) {
-    header {
-        height: 150px;
-        align-items: center;
-        h1 {
-            font-size: 5rem;
-        }
-    }
-    main {
-        .form_container {
-            height: 400px;
-            .form {
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                margin: 20px;
-                &__label {
-                    margin: 30px 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 4.5rem;
-                    text-shadow: 3px 3px 3px rgb(73, 73, 73);
-                    font-style: italic;
-                    font-family: variables.$recipe-name-font-family;
-                    color: variables.$background-color;
-                    &__input {
-                        width: 300px;
-                        height: 50px;
-                        font-size: 2rem;
-                        margin: 20px 0;
-                        padding: 10px;
-                        border: 2px solid black;
-                        border-radius: 10px;
-                    }
-                }
-                button {
-                    width: 100px;
-                    height: 30px;
-                    display: block;
-                    margin: 0 auto;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    border: none;
-                    border-radius: 5px;
-                    background: variables.$background-color;
-                    transition: background-color  0.4s ;
-                    cursor: pointer;
-                    &:hover {
-                        background: #e7eaca;
-                    }
-                    &:active {
-                        background-color: #575b5b;
-                        color: whitesmoke;
-                        box-shadow: 0 5px rgb(95, 95, 95);
-                        transform: translateY(2px);
-                    }
-                }
-                &__error {
-                    margin: 30px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    #error_msg {
-                        color: white;
-                        text-shadow: 2px 2px 2px variables.$error_color;
-                    }
-                }
+@mixin screen_size_xl {
+        header {
+            height: 150px;
+            align-items: center;
+            h1 {
+                font-size: 5rem;
             }
         }
-        .section__recipes {
-            display: flex;
-            width: 100%;
-            padding: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            #meal_name {
-                font-family: variables.$recipe-name-font-family;
-                font-size: 3rem;
-            }
-            .recipe {
-                width: 40%;
-                padding: 10px;
-                margin: 10px 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                &__img {
-                    width: 80%;
-                    margin: 10px;
-                    border-radius: 50%;
-                    border: 5px solid white;
-                }
-                #insctructions {
-                    margin: 10px;
-                    text-align: justify;
-                }
-                #recipe_source {
-                    font-size: 2rem;
-                    a {
-                        text-decoration: none;
-                        color: rgb(110, 108, 108);
-                        text-shadow: 1px 1px 1px black;
+        main {
+            .form_container {
+                height: 400px;
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    margin: 20px;
+                    &__label {
+                        margin: 30px 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 4.5rem;
+                        text-shadow: 3px 3px 3px rgb(73, 73, 73);
                         font-style: italic;
-                        transition: color 0.6s;
+                        font-family: variables.$recipe-name-font-family;
+                        color: variables.$background-color;
+                        &__input {
+                            width: 300px;
+                            height: 50px;
+                            font-size: 2rem;
+                            margin: 20px 0;
+                            padding: 10px;
+                            border: 2px solid black;
+                            border-radius: 10px;
+                        }
                     }
-                    a:hover {
-                        color: #e4c4af;
+                    button {
+                        width: 100px;
+                        height: 30px;
+                        display: block;
+                        margin: 0 auto;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        border: none;
+                        border-radius: 5px;
+                        background: variables.$background-color;
+                        transition: background-color  0.4s ;
+                        cursor: pointer;
+                        &:hover {
+                            background: #e7eaca;
+                        }
+                        &:active {
+                            background-color: #575b5b;
+                            color: whitesmoke;
+                            box-shadow: 0 5px rgb(95, 95, 95);
+                            transform: translateY(2px);
+                        }
                     }
-                    a:visited {
-                        color: #889033;
+                    &__error {
+                        margin: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        #error_msg {
+                            color: white;
+                            text-shadow: 2px 2px 2px variables.$error_color;
+                        }
                     }
                 }
             }
+            .section__recipes {
+                display: flex;
+                width: 100%;
+                padding: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+                #meal_name {
+                    font-family: variables.$recipe-name-font-family;
+                    font-size: 3rem;
+                }
+                .recipe {
+                    width: 40%;
+                    padding: 10px;
+                    margin: 10px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &__img {
+                        width: 80%;
+                        margin: 10px;
+                        border-radius: 50%;
+                        border: 5px solid white;
+                    }
+                    #insctructions {
+                        margin: 10px;
+                        text-align: justify;
+                    }
+                    #recipe_source {
+                        font-size: 2rem;
+                        a {
+                            text-decoration: none;
+                            color: rgb(110, 108, 108);
+                            text-shadow: 1px 1px 1px black;
+                            font-style: italic;
+                            transition: color 0.6s;
+                        }
+                        a:hover {
+                            color: #e4c4af;
+                        }
+                        a:visited {
+                            color: #889033;
+                        }
+                    }
+                }
+            }
+            #no_result {
+                margin: 20px auto;
+                color: variables.$error_color;
+                font-size: 5rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
         }
-        #no_result {
-            margin: 20px auto;
-            color: variables.$error_color;
-            font-size: 5rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-    }
-    
 }
