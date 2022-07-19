@@ -1,14 +1,14 @@
-Recipe finder site
+<h1>Recipe finder site<h1>
 
-With this responsive site you can find multiple recipes from around the world. The site is using TheMealDB API from https://www.themealdb.com/.
+<h3>With this responsive site you can find multiple recipes from around the world. The site is using TheMealDB API from https://www.themealdb.com/.</h3>
 
-Here's some screenshots from the site:
+<h4>Here's some screenshots from the site:</h4>
 
-Mobile view
+<p>Mobile view</p>
 ![](Images/Recipe_mobile_view.jpg)
-Tablet view
+<p>Tablet view</p>
 ![](Images/Recipe_tablet_view.png)
-Desktop view
+<p>Desktop view</p>
 ![](Images/Recipe_main_site.jpg)
 ![](Images/Recipe_search.jpg)
 
