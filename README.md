@@ -6,10 +6,12 @@
 
 <p>Mobile view</p>
 <img src="Images/Recipe_mobile_view.jpg" alt="site mobile view screenshot">
-![](Images/Recipe_mobile_view.jpg)
+
 <p>Tablet view</p>
-![](Images/Recipe_tablet_view.png)
+<img src="Images/Recipe_tablet_view.png" alt="site tablet view screenshot">
+
 <p>Desktop view</p>
-![](Images/Recipe_main_site.jpg)
-![](Images/Recipe_search.jpg)
+<img src="Images/Recipe_main_site.jpg" alt="site desktop view screenshot">
+<img src="Images/Recipe_search.jpg" alt="site desktop view screenshot">
+
 
