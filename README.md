@@ -5,6 +5,7 @@
 <h4>Here's some screenshots from the site:</h4>
 
 <p>Mobile view</p>
+<img src="Images/Recipe_mobile_view.jpg" alt="site mobile view screenshot">
 ![](Images/Recipe_mobile_view.jpg)
 <p>Tablet view</p>
 ![](Images/Recipe_tablet_view.png)
