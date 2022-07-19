@@ -4,5 +4,7 @@ With this responsive site you can find multiple recipes from around the world. T
 
 Here's some screenshots from the site
 
-<img src="images/Recipe_main_site.jpg" alt"Recipe main site desktop">
-<img src="images/Recipe_search.jpg" alt="Recipe desktop searched for soups">
+![](Images/Recipe_main_site.jpg)
+![]
+<img src="Images/Recipe_main_site.jpg" alt"Recipe main site desktop">
+<img src="Images/Recipe_search.jpg" alt="Recipe desktop searched for soups">
