@@ -1,35 +1,25 @@
-import React, { useState, useEffect } from "react";
-import ".index.scss";
+import React, { useState } from "react";
 
 export const RecipeFinder = () => {
   const [searchValue, setSearchValue] = useState(null);
   const [recipes, setRecipes] = useState(null);
   const [searchError, setSearchError] = useState(null);
 
-  const recipeSearching = async (e) => {
-    e.preventDefault();
+async function handleSubmit(e) {
+  e.preventDefault();
 
-    let inputValue = searchValue.trim();
+  await fetch(
+    `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`
+  )
+    .then(async (response) => await response.json())
+    .then(async (recipeData) => setRecipes(recipeData[1]));
 
-    if (inputValue.length() === 0 || inputValue === null) {
-      setSearchError("Invalid input");
-    } else {
-      await fetch(
-        `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`
-      )
-        .then(async (response) => await response.json())
-        .then(async (json) => setRecipes(json));
-    }
-  };
-
-  useEffect(() => {
-    recipeSearching();
-    console.log(recipes);
-  })
+    console.log(recipes)
+}
 
   return (
     <div className="form__container">
-      <form className="form" onSubmit={recipeSearching()}>
+      <form className="form" onSubmit={handleSubmit}>
         <label className="form__label">
           <input
             type="text"
@@ -41,7 +31,7 @@ export const RecipeFinder = () => {
         <button type="submit" className="form__button">
           Search
         </button>
-        <p className="form__error">{searchError}</p>
+        {/* <p className="form__error">{searchError}</p> */}
       </form>
     </div>
   );
