@@ -29,7 +29,7 @@ export const RecipeFinder = () => {
 
   return (
     <div className="form__container">
-      <form className="form">
+      <form className="form" onSubmit={recipeSearching()}>
         <label className="form__label">
           <input
             type="text"
