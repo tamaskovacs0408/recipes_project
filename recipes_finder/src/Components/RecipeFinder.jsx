@@ -1,11 +1,15 @@
 import React, {useState, useEffect} from 'react';
 
 export const RecipeFinder = () => {
+  const API_URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`;
+
+
+
   return (
     <div className='form__container'>
       <form className='form'>
         <label className='form__label'>
-          <input type="text" name='food' className='form__label__input'/>
+          <input type="text" name='food' className='form__label--input'/>
         </label>
         <button type='submit' className='form__button'>Search</button>
         <p className='form__error'></p>
