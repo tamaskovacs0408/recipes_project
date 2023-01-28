@@ -1,0 +1,42 @@
+@mixin size_m {
+    header {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    .form_container {
+        height: 250px;
+        .form {
+            margin: 15px;
+            &__label {
+                margin: 20px 0;
+                font-size: 4rem;
+                &__input {
+                    width: 250px;
+                    height: 30px;
+                    font-size: 1.8rem;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+    .section__recipes {
+        .recipe {
+            width: 75%;
+            #meal_name {
+                font-size: 3rem;
+            }
+            &__img {
+                width: 50%;
+            }
+            &__instructions {
+                font-size: 2.2rem;
+                margin-bottom: 10px;
+                line-height: normal;
+            }
+            #recipe__source {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

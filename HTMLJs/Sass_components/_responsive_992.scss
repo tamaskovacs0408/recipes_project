@@ -1,0 +1,10 @@
+@mixin size_l {
+    .section__recipes {
+        .recipe {
+            width: 90%;
+            &__img {
+                width: 35%;
+            }
+        }
+    }
+}
