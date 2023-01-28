@@ -23,24 +23,24 @@ async function handleSubmit(e) {
   }
 }
 
-console.log(recipes);
-
   return (
-    <div className="form__container">
-      <form className="form" onSubmit={handleSubmit}>
-        <label className="form__label">
-          <input
-            type="text"
-            name="food"
-            className="form__label--input"
-            ref={inputRef}
-          />
-        </label>
-        <button type="submit" className="form__button">
-          Search
-        </button>
-        <p className="form__error">{searchError}</p>
-      </form>
-    </div>
+    <section className="recipes">
+      <div className="form__container">
+        <form className="form" onSubmit={handleSubmit}>
+          <label className="form__label">
+            <input
+              type="text"
+              name="food"
+              className="form__label--input"
+              ref={inputRef}
+            />
+          </label>
+          <button type="submit" className="form__button">
+            Search
+          </button>
+          <p className="form__error">{searchError}</p>
+        </form>
+      </div>
+    </section>
   );
 };
