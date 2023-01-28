@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Recipe } from "../Recipe/Recipe";
 import "./index.scss";
 
 export const RecipeFinder = () => {
@@ -20,6 +21,8 @@ async function handleSubmit(e) {
     )
       .then(async (response) => await response.json())
       .then(async (data) => setRecipes(data.meals));
+      
+
   }
 }
 
@@ -41,6 +44,9 @@ async function handleSubmit(e) {
           <p className="form__error">{searchError}</p>
         </form>
       </div>
+      {Array.from(recipes).map((recipe) => {
+        return <Recipe key={recipe.idMeal} data={recipe}/>
+      })}
     </section>
   );
 };
