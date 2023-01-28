@@ -334,6 +334,9 @@ footer p a:visited {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 100%;
   }
   .section__recipes #no_result {
