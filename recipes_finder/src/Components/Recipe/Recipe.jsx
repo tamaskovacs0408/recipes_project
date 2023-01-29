@@ -24,8 +24,9 @@ export const Recipe = ({ data }) => {
 
   return (
     <>
-      <div>
+      <div className="recipe__thumbnail">
         <h2>{data.strMeal}</h2>
+        <img src={data.strMealThumb} alt={data.strMeal} />
         <p>{data.strInstructions}</p>
         <div className="ingredients">
           <h3>Ingredients:</h3>
