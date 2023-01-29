@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import uuid from "react-uuid";
 import "./index.scss";
+import { RecipeModal } from "../RecipeModal/RecipeModal";
 
 export const Recipe = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   let ingredients = [];
   let measures = [];
   for (let i = 1; i <= 20; i++) {
@@ -25,18 +28,13 @@ export const Recipe = ({ data }) => {
   return (
     <>
       <div className="recipe__thumbnail">
+        <button onClick={() => setIsOpen(true)}>open modal</button>
         <h2>{data.strMeal}</h2>
         <img src={data.strMealThumb} alt={data.strMeal} />
-        <p>{data.strInstructions}</p>
-        <div className="ingredients">
-          <h3>Ingredients:</h3>
-        </div>
-        <ul>
-          {Object.entries(ingObj).map(([ingredient, measure]) => {
-            return <li key={uuid()}>{ingredient}: {measure}</li>
-          })}
-        </ul>
       </div>
+      {isOpen && (
+        <RecipeModal data={data}/>
+      )}
     </>
   );
 };
