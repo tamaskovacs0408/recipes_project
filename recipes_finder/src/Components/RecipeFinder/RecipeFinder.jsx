@@ -44,9 +44,11 @@ async function handleSubmit(e) {
           <p className="form__error">{searchError}</p>
         </form>
       </div>
-      {Array.from(recipes).map((recipe) => {
-        return <Recipe key={recipe.idMeal} data={recipe}/>
-      })}
+      <div className="recipes__container">
+        {Array.from(recipes).map((recipe) => {
+          return <Recipe key={recipe.idMeal} data={recipe} />;
+        })}
+      </div>
     </section>
   );
 };
