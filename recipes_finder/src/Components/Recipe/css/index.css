@@ -1,0 +1,9 @@
+@media screen and (min-width: 992px) {
+  .recipe__thumbnail {
+    width: 100%;
+  }
+  .recipe__thumbnail img {
+    width: 80%;
+    border-radius: 20px;
+  }
+}
