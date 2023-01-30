@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import uuid from "react-uuid";
+// import uuid from "react-uuid";
 import "./index.scss";
 import { RecipeModal } from "../RecipeModal/RecipeModal";
 
 export const Recipe = ({ data }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   let ingredients = [];
   let measures = [];
@@ -25,15 +25,19 @@ export const Recipe = ({ data }) => {
     return acc;
   }, {})
 
+  const handleOpen = () => setOpen(true);
+
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <div className="recipe__thumbnail">
-        <button onClick={() => setIsOpen(true)}>open modal</button>
+        <button onClick={handleOpen}>open modal</button>
         <h2>{data.strMeal}</h2>
         <img src={data.strMealThumb} alt={data.strMeal} />
       </div>
-      {isOpen && (
-        <RecipeModal data={data}/>
+      {open && (
+        <RecipeModal data={data} close={handleClose}/>
       )}
     </>
   );
