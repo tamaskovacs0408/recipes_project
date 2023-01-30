@@ -37,7 +37,7 @@ export const Recipe = ({ data }) => {
         <img src={data.strMealThumb} alt={data.strMeal} />
       </div>
       {open && (
-        <RecipeModal data={data} close={handleClose}/>
+        <RecipeModal data={data} open={open} close={handleClose}/>
       )}
     </>
   );
