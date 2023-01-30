@@ -1,14 +1,21 @@
 .modal {
-  position: fixed; /* position fixed to stay on the screen */
-  display: none; /* hidden by default */
-  z-index: 5; /* sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  height: 90%;
+  background-color: rgba(254, 254, 254, 0.7098039216);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+}
+.modal img {
+  max-width: 30%;
 }
 
 .modal-content {
@@ -17,9 +24,4 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* When the modal is open */
-.modal[aria-hidden=false] {
-  display: block;
 }
