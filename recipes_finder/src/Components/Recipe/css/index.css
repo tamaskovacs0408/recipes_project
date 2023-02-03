@@ -19,7 +19,7 @@
 }
 
 .recipe__thumbnail:hover {
-  background-color: pink;
+  background-color: #DD970E;
 }
 .recipe__thumbnail:hover img {
   -webkit-filter: grayscale(0);
