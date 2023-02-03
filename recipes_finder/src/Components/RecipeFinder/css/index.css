@@ -1,3 +1,111 @@
+.recipes {
+  width: 100%;
+  height: 200px;
+  background-image: url("../../Images/src_bg1.jpg");
+  background-size: cover;
+  margin: 0 auto 20px auto;
+}
+.recipes .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.recipes .form__container .form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+.recipes .form__container .form__label {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 3px rgb(73, 73, 73);
+  font-style: italic;
+}
+.recipes .form__container .form__label--input {
+  width: 200px;
+  height: 15px;
+  font-size: 1.5rem;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+.recipes .form__container .form button {
+  width: 100px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+.recipes .form__container .form button:hover {
+  background: yellow;
+}
+.recipes .form__container .form button:active {
+  -webkit-box-shadow: 0 5px rgb(95, 95, 95);
+          box-shadow: 0 5px rgb(95, 95, 95);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+.recipes .form__container .form__error {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recipes .form__container .form__error #error_msg {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 @media screen and (min-width: 992px) {
   .recipes .recipes__container {
     display: grid;
