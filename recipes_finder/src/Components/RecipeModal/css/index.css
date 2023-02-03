@@ -30,6 +30,10 @@
 .modal img {
   max-width: 70%;
 }
+.modal .meal__category span {
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
 .modal .ingredients {
   width: 100%;
   margin: 10px auto;
