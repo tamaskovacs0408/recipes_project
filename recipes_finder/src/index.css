@@ -6,13 +6,19 @@
 
 body {
   position: relative;
-    min-height: 100vh;
-    font-size: 1.8rem;
-    color: black;
-    background: #DDE0BD;
+  min-height: 100vh;
+  font-size: 1.8rem;
+  color: black;
+  background: #dde0bd;
+}
+
+h1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 3rem;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
