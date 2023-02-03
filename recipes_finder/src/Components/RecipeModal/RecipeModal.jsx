@@ -27,6 +27,10 @@ export const RecipeModal = ({ data, open, close }) => {
     <Modal open={open} onClose={close}>
       <div className="modal">
         <h2>{data.strMeal}</h2>
+        <div className="meal__category">
+          <span>{data.strCategory}</span>,
+          <span>{data.strArea}</span>
+        </div>
         <img src={data.strMealThumb} alt={data.strMeal} />
         <div className="ingredients">
           <h3>Ingredients</h3>
