@@ -24,17 +24,12 @@ export const RecipeModal = ({ data, open, close }) => {
   }, {});
 
   return (
-    <Modal
-      open={open}
-      onClose={close}
-    >
+    <Modal open={open} onClose={close}>
       <div className="modal">
-          <h2>{data.strMeal}</h2>
-          <img src={data.strMealThumb} alt={data.strMeal} />
-          <p>{data.strInstructions}</p>
-          <div className="ingredients">
-            <h3>Ingredients:</h3>
-          </div>
+        <h2>{data.strMeal}</h2>
+        <img src={data.strMealThumb} alt={data.strMeal} />
+        <div className="ingredients">
+          <h3>Ingredients</h3>
           <ul>
             {Object.entries(ingObj).map(([ingredient, measure]) => {
               return (
@@ -44,6 +39,10 @@ export const RecipeModal = ({ data, open, close }) => {
               );
             })}
           </ul>
+        </div>
+        <div className="recipe__inst">
+          <p>{data.strInstructions}</p>
+        </div>
       </div>
     </Modal>
   );
