@@ -4,24 +4,50 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   height: 90%;
-  background-color: rgba(254, 254, 254, 0.7098039216);
+  padding: 10px;
+  background-color: rgba(254, 254, 254, 0.8274509804);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: auto;
 }
-.modal img {
-  max-width: 30%;
+.modal h2 {
+  font-size: 2rem;
+  text-align: center;
 }
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+.modal img {
+  max-width: 70%;
+}
+.modal .ingredients {
+  width: 100%;
+  margin: 10px auto;
+}
+.modal .ingredients h3 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.modal .ingredients ul, .modal .ingredients li {
+  list-style: none;
+  font-size: 1.3rem;
+  text-align: left;
+}
+.modal .recipe__inst {
+  width: 100%;
+  margin: 10px auto;
+}
+.modal .recipe__inst p {
+  text-align: justify;
+  font-size: 1.5rem;
 }

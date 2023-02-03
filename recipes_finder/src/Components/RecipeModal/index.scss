@@ -3,26 +3,47 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   height: 90%;
-  background-color: #fefefeb5;
+  padding: 10px;
+  background-color: #fefefed3;
   display: flex;
-  flex-wrap: wrap;
-
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   overflow: auto;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
   
   img {
-    max-width: 30%;
+    max-width: 70%;
   }
-}
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+    .ingredients {
+      width: 100%;
+      margin: 10px auto;
+    h3 {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    ul, li {
+      list-style: none;
+      font-size: 1.3rem;
+      text-align: left;
+    }
+  }
 
-  
+  .recipe__inst {
+    width: 100%;
+    margin: 10px auto;
+
+    p {
+      text-align: justify;
+      font-size: 1.5rem;
+    }
+  }
 }
 
