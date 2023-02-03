@@ -31,6 +31,7 @@ async function handleSubmit(e) {
       <div className="form__container">
         <form className="form" onSubmit={handleSubmit}>
           <label className="form__label">
+            Find a recipe
             <input
               type="text"
               name="food"
