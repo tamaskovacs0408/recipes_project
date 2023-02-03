@@ -108,7 +108,7 @@
 .recipes .recipes__container {
   width: 100%;
   height: auto;
-  margin-top: 35px;
+  margin: 35px auto 10px auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
