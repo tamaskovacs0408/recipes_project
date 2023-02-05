@@ -3,28 +3,27 @@ import { Recipe } from "../Recipe/Recipe";
 import "./index.scss";
 
 export const RecipeFinder = () => {
-  const [recipes, setRecipes] = useState("");
+  const [recipes, setRecipes] = useState([]);
   const [searchError, setSearchError] = useState(null);
   const inputRef = useRef();
 
-async function handleSubmit(e) {
-  e.preventDefault();
-  let searchRef = inputRef.current.value;
+  async function handleSubmit(e) {
+    e.preventDefault();
+    let searchRef = inputRef.current.value;
 
-  searchRef = searchRef.trim();
+    searchRef = searchRef.trim();
 
-  if (searchRef === null || searchRef === '') {
-    setSearchError("Invalid value")
-  } else {
-    await fetch(
-      `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchRef}`
-    )
-      .then(async (response) => await response.json())
-      .then(async (data) => setRecipes(data.meals));
-      
-
+    if (searchRef === null || searchRef === "") {
+      setSearchError("Invalid value");
+    } else {
+      await fetch(
+        `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchRef}`
+      )
+        .then(async (response) => await response.json())
+        .then(async (data) => setRecipes(data.meals))
+        .catch((error) => console.log(error));
+    }
   }
-}
 
   return (
     <section className="recipes">
@@ -46,7 +45,7 @@ async function handleSubmit(e) {
         </form>
       </div>
       <div className="recipes__container">
-        {Array.from(recipes).map((recipe) => {
+        {recipes.map((recipe) => {
           return <Recipe key={recipe.idMeal} data={recipe} />;
         })}
       </div>
