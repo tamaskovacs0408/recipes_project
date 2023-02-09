@@ -16,14 +16,21 @@ export const RecipeFinder = () => {
     if (searchRef === null || searchRef === "") {
       setSearchError("Invalid value");
     } else {
-      await fetch(
+      const response = await fetch(
         `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchRef}`
-      )
-        .then(async (response) => await response.json())
-        .then(async (data) => setRecipes(data.meals))
-        .catch((error) => console.log(error));
+      );
+      const data = await response.json();
+
+      if(data.meals === null) {
+        setSearchError("Recipe(s) not found");
+        setRecipes([]);
+      } else {
+        setRecipes(data.meals);
+        setSearchError("");
+      }
     }
   }
+
 
   return (
     <section className="recipes">
