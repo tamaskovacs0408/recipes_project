@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-// import uuid from "react-uuid";
-import "./index.scss";
 import { RecipeModal } from "../RecipeModal/RecipeModal";
+import "./index.scss";
 
 export const Recipe = ({ data }) => {
   const [open, setOpen] = useState(false);
