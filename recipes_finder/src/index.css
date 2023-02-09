@@ -17,7 +17,6 @@ body {
 
 h1 {
   margin: 20px auto;
-  display: inline-block;
   text-align: center;
   font-size: 3rem;
   font-family: 'Righteous', cursive;
@@ -26,4 +25,13 @@ h1 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+@media screen and (min-width: 992px){
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
 }
