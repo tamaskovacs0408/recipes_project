@@ -80,6 +80,7 @@
   background: #14447e;
 }
 .recipes .form__container .form button:active {
+  background: #14447e;
   -webkit-box-shadow: 0 5px #14447e;
           box-shadow: 0 5px #14447e;
   -webkit-transform: translateY(2px);
@@ -101,13 +102,13 @@
       -ms-flex-align: center;
           align-items: center;
   color: #FF2E00;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 .recipes .recipes__container {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 35px auto 10px auto;
   display: grid;
   grid-template-columns: 1fr;

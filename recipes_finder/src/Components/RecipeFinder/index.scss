@@ -51,8 +51,7 @@
           background: #14447e;
         }
         &:active {
-          // background: variables.$button_bg_active;
-          // color: variables.$button_font_active;
+          background: #14447e;
           box-shadow: 0 5px #14447e;
           transform: translateY(2px);
         }
@@ -64,16 +63,16 @@
         justify-content: center;
         align-items: center;
         color: #FF2E00;
-          font-size: 1.8rem;
-          font-weight: 700;
-          letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
       }
     }
   }
 
   .recipes__container {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 35px auto 10px auto;
     display: grid;
     grid-template-columns: 1fr;
