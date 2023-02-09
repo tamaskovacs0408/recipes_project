@@ -1,25 +1,26 @@
 .recipe__thumbnail {
   width: 80%;
   margin: 15px auto;
-  border: 2px solid black;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .recipe__thumbnail h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  margin: 10px;
 }
 .recipe__thumbnail img {
   width: 60%;
   border-radius: 20px;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  -webkit-filter: grayscale(0.7);
+          filter: grayscale(0.7);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .recipe__thumbnail:hover {
-  background-color: #DD970E;
+  background-color: rgba(255, 231, 109, 0.5843137255);
+  border-radius: 25px;
 }
 .recipe__thumbnail:hover img {
   -webkit-filter: grayscale(0);

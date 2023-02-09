@@ -1,24 +1,25 @@
 .recipe__thumbnail {
   width: 80%;
   margin: 15px auto;
-  border: 2px solid black;
   cursor: pointer;
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin: 10px;
   }
 
   img {
     width: 60%;
     border-radius: 20px;
-    filter: grayscale(1);
+    filter: grayscale(.7);
     transition: all 0.3s;
   }
   transition: all 0.3s;
 }
 
 .recipe__thumbnail:hover {
-  background-color: #DD970E;
+  background-color: #ffe76d95;
+  border-radius: 25px;
 
   img {
     filter: grayscale(0);
