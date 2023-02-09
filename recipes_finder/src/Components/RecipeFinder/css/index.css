@@ -115,9 +115,17 @@
   gap: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .recipes .recipes__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .recipes .recipes__container {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
   }
 }
