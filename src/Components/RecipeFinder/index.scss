@@ -1,0 +1,100 @@
+.recipes {
+  width: 100%;
+  height: 200px;
+  background-color: #FFE66D;
+  margin: 0 auto 20px auto;
+
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5px;
+      &__label {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 600;
+        font-style: italic;
+        &--input {
+          width: 250px;
+          height: 40px;
+          font-size: 1.5rem;
+          margin: 5px 0;
+          padding: 10px;
+          border: 1.5px solid black;
+          border-radius: 10px;
+        }
+      }
+      button {
+        width: 250px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        background-color: #0A2342;
+        color: white;
+        transition: background-color 0.4s;
+        cursor: pointer;
+        &:hover {
+          background: #14447e;
+        }
+        &:active {
+          background: #14447e;
+          box-shadow: 0 5px #14447e;
+          transform: translateY(2px);
+        }
+      }
+      &__error {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FF2E00;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .recipes__container {
+    width: 100%;
+    height: 100%;
+    margin: 35px auto 10px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .recipes {
+    .recipes__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .recipes {
+    .recipes__container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
