@@ -1,8 +1,6 @@
 {
   "name": "recipes_finder",
   "version": "1.0.0",
-  "private": false,
-  "homepage": "https://tamaskovacs0408.github.io/recipe_finder",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
