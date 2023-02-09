@@ -1,8 +1,7 @@
 .recipes {
   width: 100%;
   height: 200px;
-  background-image: url("../../Images/src_bg1.jpg");
-  background-size: cover;
+  background-color: #FFE66D;
   margin: 0 auto 20px auto;
 }
 .recipes .form__container {
@@ -32,7 +31,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+  margin: 5px;
 }
 .recipes .form__container .form__label {
   margin: 10px 0;
@@ -49,13 +48,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2.5rem;
-  text-shadow: 3px 3px 3px rgb(73, 73, 73);
+  font-size: 2rem;
+  font-weight: 600;
   font-style: italic;
 }
 .recipes .form__container .form__label--input {
-  width: 200px;
-  height: 15px;
+  width: 250px;
+  height: 40px;
   font-size: 1.5rem;
   margin: 5px 0;
   padding: 10px;
@@ -63,24 +62,26 @@
   border-radius: 10px;
 }
 .recipes .form__container .form button {
-  width: 100px;
-  height: 30px;
+  width: 250px;
+  height: 50px;
   display: block;
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #0A2342;
+  color: white;
   -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
   cursor: pointer;
 }
 .recipes .form__container .form button:hover {
-  background: yellow;
+  background: #14447e;
 }
 .recipes .form__container .form button:active {
-  -webkit-box-shadow: 0 5px rgb(95, 95, 95);
-          box-shadow: 0 5px rgb(95, 95, 95);
+  -webkit-box-shadow: 0 5px #14447e;
+          box-shadow: 0 5px #14447e;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
@@ -99,9 +100,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.recipes .form__container .form__error #error_msg {
-  font-size: 2rem;
+  color: #FF2E00;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
 }

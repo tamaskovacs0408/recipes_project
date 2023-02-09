@@ -30,7 +30,7 @@ export const RecipeFinder = () => {
       <div className="form__container">
         <form className="form" onSubmit={handleSubmit}>
           <label className="form__label">
-            Find a recipe
+            Enter a meal name
             <input
               type="text"
               name="food"

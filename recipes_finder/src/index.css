@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Righteous&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +12,14 @@ body {
   font-size: 1.8rem;
   color: black;
   background: #F2F4F3;
+  font-family: 'Dosis', sans-serif;
 }
 
 h1 {
   display: inline-block;
   text-align: center;
   font-size: 3rem;
+  font-family: 'Righteous', cursive;
 }
 
 code {
