@@ -26,11 +26,13 @@ export const RecipeModal = ({ data, open, close }) => {
   return (
     <Modal open={open} onClose={close}>
       <div className="modal">
-        <div className="meal__header">
-          <h2>{data.strMeal}</h2>
+        <h2>
+          {data.strMeal}
           <div className="meal__category">
             <span>{data.strCategory}</span>,<span>{data.strArea}</span>
           </div>
+        </h2>
+        <div className="meal__header">
           <img src={data.strMealThumb} alt={data.strMeal} />
         </div>
         <div className="ingredients">
