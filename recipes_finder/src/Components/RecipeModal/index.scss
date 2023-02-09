@@ -16,10 +16,20 @@
   h2 {
     font-size: 2rem;
     text-align: center;
+    width: 100%;
   }
+  
+  .meal__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   
   img {
     max-width: 70%;
+    margin: 5px;
   }
 
   .meal__category {
@@ -35,6 +45,7 @@
     h3 {
       text-align: center;
       font-size: 1.8rem;
+      margin: 5px;
     }
     ul, li {
       list-style: none;
@@ -57,9 +68,35 @@
 @media screen and (min-width: 768px){
   .modal {
     padding: 20px;
-    
+
     img {
       max-width: 40%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .modal {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .meal__header {
+      width: 60%;
+    }
+
+    img {
+      width: auto;
+    }
+    .ingredients {
+      width: 40%;
+
+      ul, li {
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+    }
+    .recipe__inst {
+      width: 80%;
     }
   }
 }

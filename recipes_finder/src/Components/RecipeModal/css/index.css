@@ -26,9 +26,26 @@
 .modal h2 {
   font-size: 2rem;
   text-align: center;
+  width: 100%;
+}
+.modal .meal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .modal img {
   max-width: 70%;
+  margin: 5px;
 }
 .modal .meal__category span {
   margin-left: 5px;
@@ -41,6 +58,7 @@
 .modal .ingredients h3 {
   text-align: center;
   font-size: 1.8rem;
+  margin: 5px;
 }
 .modal .ingredients ul, .modal .ingredients li {
   list-style: none;
@@ -62,5 +80,31 @@
   }
   .modal img {
     max-width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .modal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal .meal__header {
+    width: 60%;
+  }
+  .modal img {
+    width: auto;
+  }
+  .modal .ingredients {
+    width: 40%;
+  }
+  .modal .ingredients ul, .modal .ingredients li {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .modal .recipe__inst {
+    width: 80%;
   }
 }
