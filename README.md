@@ -14,6 +14,6 @@ If you'd like to run the application locally clone the repository, run `npm inst
 
 ## Screenshots
 
-![](recipes_finder/src/Screenshots/finder1.png)
-![](recipes_finder/src/Screenshots/finder2.png)
-![](recipes_finder/src/Screenshots/finder3.png)
+![](/src/Screenshots/finder1.png)
+![](/src/Screenshots/finder2.png)
+![](/src/Screenshots/finder3.png)
