@@ -21,7 +21,7 @@ export const RecipeFinder = () => {
       );
       const data = await response.json();
 
-      if(data.meals === null) {
+      if (data.meals === null) {
         setSearchError("Recipe(s) not found");
         setRecipes([]);
       } else {
@@ -31,7 +31,6 @@ export const RecipeFinder = () => {
     }
   }
 
-
   return (
     <section className="recipes">
       <div className="form__container">
@@ -39,6 +38,7 @@ export const RecipeFinder = () => {
           <label className="form__label">
             Enter a food name
             <input
+              data-testid="search_input"
               type="text"
               name="food"
               className="form__label--input"
